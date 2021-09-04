@@ -3,7 +3,10 @@ import React from 'react';
 import PortfolioContainer from "./components/PortfolioContainer";
 
 const App = () => 
+    <section>
+        <PortfolioContainer/>
+    </section>
 
-<PortfolioContainer/>;
+
 
 export default App;
