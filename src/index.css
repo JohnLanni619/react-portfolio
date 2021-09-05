@@ -397,6 +397,10 @@ a {
   text-shadow: 1px 1px 2px black, 0 0 25px yellow, 0 0 5px white;
 }
 
+#contact {
+  padding-left: 20px;
+}
+
 footer {
   position: fixed; 
   padding: 10px 10px 0px 10px; 
@@ -404,7 +408,12 @@ footer {
   width: 100%; 
   /* Height of the footer*/  
   height: 60px; 
-  background: grey; 
+  background: rgb(29, 29, 94); 
+  opacity: .7;
+}
+
+footer:hover {
+  opacity: 1 ;
 }
 
 #footer-icon-container {
@@ -415,5 +424,10 @@ footer {
 footer span {
   margin-left: 20px;
   font-size: 30px;
+}
+
+footer span:hover {
+  background-color: black;
+  border-radius: 4px;
 }
 
