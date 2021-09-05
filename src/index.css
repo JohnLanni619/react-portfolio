@@ -397,3 +397,23 @@ a {
   text-shadow: 1px 1px 2px black, 0 0 25px yellow, 0 0 5px white;
 }
 
+footer {
+  position: fixed; 
+  padding: 10px 10px 0px 10px; 
+  bottom: 0;
+  width: 100%; 
+  /* Height of the footer*/  
+  height: 60px; 
+  background: grey; 
+}
+
+#footer-icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+footer span {
+  margin-left: 20px;
+  font-size: 30px;
+}
+

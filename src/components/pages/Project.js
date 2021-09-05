@@ -29,9 +29,6 @@ const Project = () => (
              <p>Handlebars.js/MySQL2/Sequelize/express-session</p>
             </a>
         </div>
-        
-
-        
     </section>
 )
 
