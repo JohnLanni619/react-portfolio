@@ -2,8 +2,8 @@ import React from 'react';
 import headshot from '../../assets/headshot.jpg'
 
 const About = () => (
-    <section>
-        <h1 id="about"> About Me</h1>
+    <section id="about">
+        <h1> About Me</h1>
         <img src={headshot} alt="headshot" className="my-2"/>
         <div className="my-2">
             <p>

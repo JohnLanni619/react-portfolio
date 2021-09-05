@@ -36,6 +36,7 @@ body {
   color: var(--darker);
   font-family: 'Poiret One', cursive;
   background-image: url(./assets/background.jpeg);
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -308,3 +309,91 @@ a {
 .nav-item {
   margin-right: 75px;
 }
+
+#about {
+  padding-left: 20px;
+}
+
+/* styling for work section */
+.flexbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  width: 75%;
+  height: min-content;
+}
+
+.flexbox-item {
+  border: 3px solid red;
+  height: 300px;
+  margin: 5px;
+  padding: 50px 0;
+  color: white;
+  overflow: hidden;
+}
+
+.flexbox-item-1 {
+  width: 100%;  
+  padding: 130px 0;
+  background-image: url(./assets/anime.jpg);
+  background-size:cover;
+  
+}
+
+.flexbox-item-2 {
+  background-image: url(./assets/ambience.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.flexbox-item-3 {
+  background-image: url(./assets/AdobeStock_269021997.jpeg);
+  background-size: cover;
+  background-position: top;
+}
+
+.flexbox-item-4 {
+  background-image: url(./assets/AdobeStock_279212049.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.flexbox-item-5 {
+  background-image: url(./assets/AdobeStock_377749814.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.flexbox-item-6 {
+  background-image: url(./assets/AdobeStock_83490178.jpeg);
+  background-size: cover;
+  background-position:center;
+}
+
+.flexbox-item-2, .flexbox-item-3, .flexbox-item-4, .flexbox-item-5, .flexbox-item-6 {
+  width: 40%;
+  height: 150px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+#work h1 {
+  padding-left: 20px;
+}
+
+#work h4, #work p {
+  /* background-image: linear-gradient(navy, yellow); */
+  width: min-content;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#page div h1 {
+  color: navy;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px black, 0 0 25px yellow, 0 0 5px white;
+}
+
