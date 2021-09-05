@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Work = () => (
+const Project = () => (
     <section id="work">
-        <h1>Work</h1>
+        <h1>Projects</h1>
         <div class="flexbox-container">
             <a class="flexbox-item flexbox-item-1" href="https://arcane-waters-50733.herokuapp.com/">
                 <h4>The Anime Shop</h4>
@@ -35,4 +35,4 @@ const Work = () => (
     </section>
 )
 
-export default Work;
+export default Project;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import NavTabs from './NavTabs';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Work from './pages/Portfolio';
+import Project from './pages/Project';
 import Resume from './pages/Resume';
 
 function Portfolio() {
@@ -16,8 +16,8 @@ function Portfolio() {
                 return <About/>;
             case 'Contact':
                 return <Contact/>;
-            case 'Portfolio':
-                return <Work/>;
+            case 'Projects':
+                return <Project/>;
             case 'Resume':
                 return<Resume/>
             default:
