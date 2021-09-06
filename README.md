@@ -14,7 +14,7 @@ The goal of this project was to create a portfolio that includes an about sectio
 8. The footer has links to my GitHub, linkedIn, and Stack Overflow pages
 
 ## Links
-[Link to Website]() </br>
+[Link to Website](https://johnlanni619.github.io/react-portfolio/) </br>
 [Link to Repository](https://github.com/JohnLanni619/react-portfolio)
 
 ## Screenshot
