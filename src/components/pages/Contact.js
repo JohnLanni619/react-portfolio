@@ -34,27 +34,28 @@ function Contact() {
 
   return (
     <section id="contact">
-      <h1>Contact Me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
-        </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
-          <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5"/>
-          {errorMessage && (
+      <div className="card-container">
+        <div className="card contact-container">
+          <h2>Contact Me</h2>
+          <form id="contact-form" onSubmit={handleSubmit}>
             <div>
-              <p className="error-text">{errorMessage}</p>
+              <input type="text" placeholder="Name" defaultValue={name} onBlur={handleChange} name="name" />
             </div>
-          )}
+            <div>
+              <input type="email" placeholder="youremail@test.com" name="email" defaultValue={email} onBlur={handleChange} />
+            </div>
+            <div>
+              <textarea name="message" placeholder="Message" defaultValue={message} onBlur={handleChange} rows="5"/>
+              {errorMessage && (
+                <div>
+                  <p className="error-text">{errorMessage}</p>
+                </div>
+              )}
+            </div>
+            <button type="submit">Submit</button>
+          </form>
         </div>
-        <button type="submit">Submit</button>
-      </form>
+      </div>
     </section>
   )
 };

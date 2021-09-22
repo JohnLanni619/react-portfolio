@@ -52,12 +52,12 @@ const Project = () => (
                 </ExternalLink>
             </div>
             <div class="flexbox-item flexbox-item-6">
-                <ExternalLink href="https://github.com/JohnLanni619/tech-blog">
+                <ExternalLink href="https://github.com/JohnLanni619/habit-tracker">
                     <GoMarkGithub id="git-icon"/>
                 </ExternalLink>
-                <ExternalLink id="dep-link" href="https://radiant-gorge-54572.herokuapp.com/">
-                    <h4>Tech Blog</h4>
-                    <p>Handlebars.js/MySQL2/Sequelize/express-session</p>
+                <ExternalLink id="dep-link" href="https://boiling-beach-80721.herokuapp.com/">
+                    <h4>Hype Machine</h4>
+                    <p>MERN Stack/GraphQL/Apollo</p>
                 </ExternalLink>
             </div>
         </div>
