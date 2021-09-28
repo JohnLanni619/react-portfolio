@@ -5,7 +5,6 @@ import { ExternalLink } from 'react-external-link';
 const Project = () => (
     <section id="work">
         <h1>Projects</h1>
-        <div className="test">
             <div className="flexbox-container">
                 <div className="flexbox-item flexbox-item-1">
                     <ExternalLink href="https://github.com/JohnLanni619/anime-storefront">
@@ -22,7 +21,7 @@ const Project = () => (
                     </ExternalLink>
                     <ExternalLink id="dep-link" href="https://bryanjperez.github.io/group6random/">
                         <h4>Ambience</h4>
-                        <p>HTML/CSS/JavaScript/jQuery/APIs</p>
+                        <p>HTML/CSS/JavaScript/jQuery</p>
                     </ExternalLink>
                 </div>
                 <div className="flexbox-item flexbox-item-3">
@@ -31,7 +30,7 @@ const Project = () => (
                     </ExternalLink>
                     <ExternalLink id="dep-link" href="https://powerful-cove-91999.herokuapp.com/">
                         <h4>Budget Tracker</h4>
-                        <p>HTML/CSS/JavaScript/JQuery</p>
+                        <p>HTML/CSS/JavaScript</p>
                     </ExternalLink>
                 </div>
                 <div className="flexbox-item flexbox-item-4">
@@ -62,7 +61,6 @@ const Project = () => (
                     </ExternalLink>
                 </div>
             </div>
-        </div>
     </section>
 )
 
