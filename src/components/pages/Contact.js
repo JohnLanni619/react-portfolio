@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { validateEmail } from '../../utils/helpers';
+import { MdEmail } from 'react-icons/md';
 
 function Contact() {
   const [errorMessage, setErrorMessage] = useState('');
@@ -54,6 +55,9 @@ function Contact() {
             </div>
             <button type="submit">Submit</button>
           </form>
+        </div>
+        <div> 
+          <MdEmail className='icon'></MdEmail>
         </div>
       </div>
     </section>

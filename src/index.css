@@ -52,6 +52,7 @@ h6 {
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
+  text-align: center;
 }
 
 h1 {
@@ -190,21 +191,6 @@ textarea {
   justify-content: flex-end;
 }
 
-.mx-1 {
-  margin-right: var(--spacing-one);
-  margin-left: var(--spacing-one);
-}
-
-.mx-2 {
-  margin-right: var(--spacing-two);
-  margin-left: var(--spacing-two);
-}
-
-.my-1 {
-  margin-top: var(--spacing-one);
-  margin-bottom: var(--spacing-one);
-}
-
 .my-2 {
   margin-top: var(--spacing-two);
   margin-bottom: var(--spacing-two);
@@ -213,39 +199,6 @@ textarea {
 .my-5 {
   margin-top: var(--spacing-five);
   margin-bottom: var(--spacing-five);
-}
-
-.img-thumbnail {
-  width: auto;
-  height: 300px;
-  margin-bottom: 50px;
-  cursor: pointer;
-}
-
-.modalBackdrop {
-  background: rgba(0, 0, 0, 0.65);
-  bottom: 0;
-  left: 0;
-  overflow: auto;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 1;
-}
-
-.modalContainer {
-  background: var(--darker);
-  border-radius: 5px;
-  max-width: 100%;
-  margin: 50px auto;
-  padding: 15px;
-  width: 960px;
-}
-
-.modalTitle {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 25px;
 }
 
 button {
@@ -303,7 +256,21 @@ header h1 {
 
 #about {
   padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+
+#about p {
+  text-align: center;
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+}
+
 
 /* styling for work section */
 .flexbox-container {
@@ -439,6 +406,11 @@ header h1 {
   background-color: #051b42;
 }
 
+.icon {
+  font-size: 50px;
+  color: #08244c;
+}
+
 
 
 #git-icon {
@@ -475,6 +447,7 @@ footer {
   height: 60px; 
   background: #08244c; 
   opacity: .7;
+  z-index: 5;
 }
 
 footer:hover {

@@ -9,7 +9,7 @@ const About = () => (
         </div>
         <div className="my-2">
             <p>
-            I'm an aspiring full stack web developer, currently working through the Rutgers Coding Bootcamp. When I'm not practicing coding, I'm working as a personal trainer and spending time with my three year old son.
+            I'm an aspiring full stack web developer. I just finished the Rutgers Coding Bootcamp in September. I want to develop applications that both enhance user experience and also increase company revenue. I'd like to work in an environment that facilitates contiuous learning and development. As a former personal training manager, I'm proficient in working with others towards a common goal. <br></br> When I'm not coding, I'm working as a personal trainer and spending time with my three year old son.
             </p>
         </div>
     </section>
