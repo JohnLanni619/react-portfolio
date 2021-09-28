@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { MdEmail } from 'react-icons/md';
 import { FcPhoneAndroid } from "react-icons/fc";
 

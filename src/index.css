@@ -407,6 +407,7 @@ footer span:hover {
     padding: 0px;
     margin: 0px;
     text-align: center;
+    font-size: 14px;
   }
 
   .nav-item a {
@@ -460,7 +461,7 @@ footer span:hover {
     font-size: 12px;
   }
   .flexbox-container {
-    width: 100%;
+    width: 90%;
   }
 
   #nav-container {
@@ -497,10 +498,12 @@ footer span:hover {
   .flexbox-item {
     justify-content: center;
     align-items: center;
+    height: 150px;
+    width: 100%;
   }
 
   .flexbox-item h4 {
-    font-size: 9px;
+    font-size: 14px;
   }
 
   .flexbox-item p {
@@ -509,11 +512,20 @@ footer span:hover {
 
   /* Contact Media Queries */
   #contact a {
-    font-size: 10px;
+    font-size: 14px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  .col-1 {
+    margin: 0px 0px 15px 0px;
   }
 
   .icon {
-    font-size: 50px;
+    font-size: 75px;
   }
 
   /* Resume Media Queries */
@@ -521,7 +533,7 @@ footer span:hover {
     width: 100%;
   }
   .card {
-    font-size: 11px;
+    font-size: 14px;
     padding: 0px;
     padding-top: 10px;
   }
