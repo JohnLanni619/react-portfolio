@@ -12,6 +12,7 @@ function Resume() {
                     <li>HTML/CSS/JavaScript</li>
                     <li>SQL/MYSQL/MongoDB</li>
                     <li>Node.js/Express.js/React.js</li>
+                    <li>MERN Stack Development</li>
                     <li>Click on icon below to see full resume!</li>
                     <li><a href={resume}><SiAdobeacrobatreader/></a></li>
                 </ul>

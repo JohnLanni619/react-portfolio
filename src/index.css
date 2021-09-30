@@ -34,9 +34,12 @@ body {
   font-size: 18px;
   letter-spacing: 0.1em;
   color: var(--darker);
-  font-family: 'Poiret One', cursive;
+  font-family: 'Playfair Display', serif;
   background-image: url(./assets/background.jpeg);
-  background-size: 150%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   padding-bottom: 60px;
   padding-top: 120px;
 }
@@ -56,6 +59,7 @@ h6 {
 
 h1 {
   font-size: 2.25rem;
+  font-family: 'Stick No Bills', sans-serif;
 }
 
 /* h1 styling for each page */
@@ -138,11 +142,16 @@ header h1 {
 .nav-item {
   margin-right: 75px;
   list-style: none;
+  font-family: 'Stick No Bills', sans-serif;
 }
 
 .nav-item a:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.nav-link-active {
+  background-color: #051b42;
 }
 
 /* About Me Styling */
@@ -156,6 +165,10 @@ header h1 {
 
 #about p {
   text-align: center;
+  background-color: #f2a300;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
 }
 
 .about-container {
@@ -180,7 +193,6 @@ img {
 /* styling for work section */
 
 #work h4, #work p {
-  /* background-image: linear-gradient(navy, yellow); */
   width: min-content;
   color: white;
   background-color: black;
