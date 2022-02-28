@@ -1,11 +1,9 @@
-import React from 'react';
 import { ExternalLink } from 'react-external-link';
 import { GoMarkGithub } from 'react-icons/go';
 import { FaLinkedin } from 'react-icons/fa';
 import {FaStackOverflow} from 'react-icons/fa';
 
-function Footer () {
-
+export default function Footer () {
     return (
         <footer>
             <div id="footer-icon-container">
@@ -21,6 +19,4 @@ function Footer () {
             </div>
         </footer>
     )
-}
-
-export default Footer;
+};

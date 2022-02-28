@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import NavTabs from './NavTabs';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Project from './pages/Project';
-import Resume from './pages/Resume';
+import About from './pages/about';
+import Contact from './pages/contact';
+import Project from './pages/projects';
+import Resume from './pages/resume';
 
-function Portfolio() {
+export default function Portfolio() {
     // Using useState, set the default value for currentPage to 'Home'
     const [currentPage, handlePageChange] = useState('Home');
 
@@ -27,13 +27,9 @@ function Portfolio() {
 
     return (
         <div className="my-5" id="page">
-            {/* Pass the state value and the setter as props to NavTabs */}
             <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-            {/* Call the renderPage function */}
             <div>{renderPage()}</div>
         </div>
     );
-}
-
-export default Portfolio;
+};
 

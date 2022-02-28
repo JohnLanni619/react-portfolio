@@ -1,9 +1,7 @@
-import React from 'react';
 import resume from '../../assets/JLTechResume.pdf'
 import {SiAdobeacrobatreader} from 'react-icons/si'
 
-
-function Resume() {
+export default function Resume() {
     return (
         <section id="resume">
             <h1>Resume</h1>
@@ -19,6 +17,4 @@ function Resume() {
             </div>
         </section>
     );
-}
-
-export default Resume;
+};

@@ -1,8 +1,7 @@
-import React from "react";
 import { MdEmail } from 'react-icons/md';
 import { FcPhoneAndroid } from "react-icons/fc";
 
-function Contact() {
+export default function Contact() {
   return (
     <section id="contact">
       <h1>Contact Me</h1>
@@ -21,5 +20,3 @@ function Contact() {
     </section>
   )
 };
-
-export default Contact;
