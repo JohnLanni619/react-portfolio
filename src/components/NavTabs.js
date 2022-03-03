@@ -1,5 +1,5 @@
 export default function NavTabs(props) {
-  const tabs = ['About Me', 'Projects', 'Contact', 'Resume'];
+  const tabs = ['About Me', 'Projects', 'Resume', 'Contact'];
   return (
     <header>
       <h1> John Lanni </h1>
