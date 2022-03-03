@@ -2,6 +2,7 @@ import Project from '../Project';
 import anime from '../../assets/anime.jpg'; import budget from '../../assets/budget.jpg';
 import ambience from '../../assets/ambience.jpeg'; import workDay from '../../assets/work-day-scheduler.jpeg';
 import employeeTracker from '../../assets/employee-tracker.jpeg'; import hypeMachine from '../../assets/hype-machine.jpg';
+import AnimatedPage from '../AnimatedPage';
 
 export default function  Projects() {
     const websites = [
@@ -62,9 +63,12 @@ export default function  Projects() {
     ]
 
     return (
-        <section id="work">
-            <h1>Projects</h1>
-            <Project websites={websites} />
-        </section>
+        <AnimatedPage>
+            <section id="work">
+                <h1>Projects</h1>
+                <Project websites={websites} />
+            </section>
+        </AnimatedPage>
+        
     )
 }
