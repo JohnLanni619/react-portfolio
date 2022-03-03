@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.8f99eb1c.css",
-    "main.js": "/react-portfolio/static/js/main.f0ad39fe.js",
+    "main.css": "/react-portfolio/static/css/main.8eed7dd5.css",
+    "main.js": "/react-portfolio/static/js/main.eb0d7dbc.js",
     "static/media/work-day-scheduler.jpeg": "/react-portfolio/static/media/work-day-scheduler.7380b6874914e3bbc537.jpeg",
     "static/media/background.jpeg": "/react-portfolio/static/media/background.41e7984615bb514c7457.jpeg",
     "static/media/employee-tracker.jpeg": "/react-portfolio/static/media/employee-tracker.f2e9cc22c521d85768ee.jpeg",
@@ -13,11 +13,11 @@
     "static/media/hype-machine.jpg": "/react-portfolio/static/media/hype-machine.fb4fbc07b02da15357a2.jpg",
     "static/media/headshot.jpg": "/react-portfolio/static/media/headshot.47ffdb4a1b5e5ff4caee.jpg",
     "index.html": "/react-portfolio/index.html",
-    "main.8f99eb1c.css.map": "/react-portfolio/static/css/main.8f99eb1c.css.map",
-    "main.f0ad39fe.js.map": "/react-portfolio/static/js/main.f0ad39fe.js.map"
+    "main.8eed7dd5.css.map": "/react-portfolio/static/css/main.8eed7dd5.css.map",
+    "main.eb0d7dbc.js.map": "/react-portfolio/static/js/main.eb0d7dbc.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f99eb1c.css",
-    "static/js/main.f0ad39fe.js"
+    "static/css/main.8eed7dd5.css",
+    "static/js/main.eb0d7dbc.js"
   ]
 }
