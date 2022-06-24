@@ -1,7 +1,6 @@
 import { ExternalLink } from 'react-external-link';
 import { GoMarkGithub } from 'react-icons/go';
 import { FaLinkedin } from 'react-icons/fa';
-import {FaStackOverflow} from 'react-icons/fa';
 
 export default function Footer () {
     return (
@@ -12,9 +11,6 @@ export default function Footer () {
                 </ExternalLink>
                 <ExternalLink href="https://www.linkedin.com/in/john-lanni-45765711a/">
                     <span><FaLinkedin/></span>
-                </ExternalLink>
-                <ExternalLink href="https://stackoverflow.com/users/16836932/john-lanni?tab=profile">
-                    <span><FaStackOverflow/></span>
                 </ExternalLink>
             </div>
         </footer>

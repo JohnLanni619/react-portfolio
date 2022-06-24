@@ -4,9 +4,20 @@ main {
   padding: 50px 30px;
 }
 
+#logo {
+  font-size: 4rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 0.5rem;
+}
+
 html {
   overflow-y: scroll;
   overflow-x: hidden;
+  scroll-padding-top: 150px;
 }
 
 :root {
@@ -17,6 +28,7 @@ html {
   --dark: #000000;
   --darker: #111111;
   --error: rgb(228, 46, 1);
+  --row-spacing: 1rem;
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
@@ -35,9 +47,9 @@ body {
   font-size: 18px;
   letter-spacing: 0.1em;
   color: var(--darker);
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   background-image: url(./assets/background.jpeg);
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -51,27 +63,28 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
-  margin: 5px 0;
+  margin: 0;
   line-height: 1.25;
   text-align: center;
 }
 
 h1 {
   font-size: 2.25rem;
-  font-family: 'Stick No Bills', sans-serif;
+  font-family: "Stick No Bills", sans-serif;
 }
 
 /* h1 styling for each page */
-#about h1, #work h1, #contact h1, #resume h1 {
+.section-title {
   color: white;
   background-color: #051b42;
+  width: max-content;
   padding: 0px 10px;
   border-radius: 5px;
   font-weight: 600;
   border-style: inset;
-  margin-bottom: 15px;
+  text-align: center;
 }
 
 h2 {
@@ -84,6 +97,7 @@ h3 {
 
 h4 {
   font-size: 1.5rem;
+  font-family: sans-serif;
 }
 
 h5 {
@@ -97,6 +111,7 @@ h6 {
 p {
   font-size: 1.1rem;
   margin-top: 0;
+  font-family: sans-serif;
 }
 
 a {
@@ -106,15 +121,18 @@ a {
   border-radius: 5px;
   color: white;
   font-weight: 600;
-  padding: 2px 4px;
-  margin-left: -2px;
-  margin-right: -2px;
+}
+
+.layout {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header/Nav Styling */
 header {
   top: 0;
-  height: 150px;
+  height: 125px;
   width: 100%;
   z-index: 5;
   background-image: url(./assets/AdobeStock_301046542.jpeg);
@@ -130,21 +148,19 @@ header h1 {
 
 #nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 30px;
   background-repeat: no-repeat;
 }
 
 .nav-item {
-  margin-right: 75px;
   list-style: none;
-  font-family: 'Stick No Bills', sans-serif;
+  font-family: "Stick No Bills", sans-serif;
 }
 
 .nav-item a {
   text-decoration: underline rgba(0, 0, 0, 0);
-  transition: text-decoration-color .5s;
+  transition: text-decoration-color 0.5s;
 }
 
 .nav-item a:hover {
@@ -157,48 +173,37 @@ header h1 {
 }
 
 /* About Me Styling */
-
-#about, #work, #contact, #resume {
+#about {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  row-gap: var(--row-spacing);
 }
 
 #about p {
-  text-align: center;
+  margin-inline: auto;
+  max-width: 70ch;
   background-color: var(--secondary);
   border-radius: 5px;
   color: white;
-  padding: 5px;
+  padding: 0.5rem;
 }
 
-.about-container {
-  width: 75%;
-}
-
-img {
-  max-width: 100%;
+.headshot {
   border-radius: 100px;
   box-shadow: 15px 15px 5px orange;
 }
 
-.my-2 {
-  margin-top: var(--spacing-two);
-  margin-bottom: var(--spacing-two);
+/* styling for projects section */
+#projects h1 {
+  margin-inline: auto;
+  margin-bottom: var(--row-spacing);
 }
 
-.my-5 {
-  margin-top: var(--spacing-five);
-  margin-bottom: var(--spacing-five);
-}
-
-/* styling for work section */
-
-#work h4, #work p {
-  width: min-content;
+#projects h4,
+#projects p {
   color: white;
-  background-color: black;
+  text-align: center;
   border-radius: 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -206,33 +211,49 @@ img {
 }
 
 .project-container {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 70%;
+  margin-inline: auto;
+  gap: 1.5rem;
 }
 
 .flexbox-item {
-  border: 3px solid red;
   height: 300px;
-  width: 45%;
-  margin: 5px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  flex-grow: 1;
+  flex-basis: 45%;
   color: white;
   overflow: hidden;
-  opacity: .6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   background-size: cover;
-  transition: .5s;
+  background-position: center;
+  box-shadow: 0px 0px 5px 1px black;
+  transition: all 0.5s ease-in-out;
+}
+
+.flexbox-item:nth-child(3n-2) {
+  flex-basis: 100%;
+}
+
+.project-content {
+  z-index: 3;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .flexbox-item:hover {
-  opacity: 1;
   border-radius: 20px;
-  transition: 1s;
   transform: scale(1.02);
-  z-index: 1;
 }
 
 #git-icon {
@@ -258,7 +279,8 @@ img {
   margin-top: 100px;
 }
 
-.col-1, .col-2 {
+.col-1,
+.col-2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -290,7 +312,7 @@ img {
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 10px;
   list-style: none;
@@ -306,13 +328,13 @@ img {
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 #resume div a {
   color: black;
   font-size: 25vh;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 #resume div a:hover {
@@ -326,20 +348,20 @@ img {
 
 /* Footer Styling */
 footer {
-  position: fixed; 
-  padding: 10px 10px 0px 10px; 
+  position: fixed;
+  padding: 10px 10px 0px 10px;
   bottom: 0;
-  width: 100%;   
-  height: 60px; 
-  background: #08244c; 
-  opacity: .7;
+  width: 100%;
+  height: 60px;
+  background: #08244c;
+  opacity: 0.7;
   z-index: 5;
   transition: 1s;
 }
 
 footer:hover {
-  opacity: 1 ;
-  transition: .7s;
+  opacity: 1;
+  transition: 0.7s;
   color: var(--secondary);
 }
 
@@ -351,11 +373,11 @@ footer:hover {
 footer span {
   margin-left: 20px;
   font-size: 30px;
-  transition: .7s;
+  transition: 0.7s;
 }
 
 footer span:hover {
-  transition: .7s;
+  transition: 0.7s;
   border-radius: 4px;
   color: green;
 }
@@ -396,12 +418,14 @@ footer span:hover {
     margin: 0px;
   }
 
-  header h1{
+  header h1 {
     width: 100%;
     color: white;
   }
 
-  h1, p, #headshot {
+  h1,
+  p,
+  #headshot {
     text-align: center;
   }
 
@@ -462,12 +486,14 @@ footer span:hover {
     margin: 0px;
   }
 
-  header h1{
+  header h1 {
     width: 100%;
     color: white;
   }
 
-  h1, p, #headshot {
+  h1,
+  p,
+  #headshot {
     text-align: center;
   }
 

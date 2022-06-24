@@ -1,16 +1,16 @@
 export default function NavTabs(props) {
-  const tabs = ['About Me', 'Projects', 'Resume', 'Contact'];
+  const tabs = ["About", "Projects", "Resume", "Contact"];
   return (
     <header>
       <h1> John Lanni </h1>
       <ul className="nav nav-tabs" id="nav-container">
-        {tabs.map(tab => (
+        {tabs.map((tab) => (
           <li className="nav-item" key={tab}>
             <a
-              href={'#' + tab.toLowerCase()}
-              onClick={() => props.handlePageChange(tab)}
+              href={"#" + tab.toLowerCase()}
+              // onClick={() => props.handlePageChange(tab)}
               className={
-                props.currentPage === tab ? 'nav-link-active' : 'nav-link'
+                props.currentPage === tab ? "nav-link-active" : "nav-link"
               }
             >
               {tab}
@@ -19,5 +19,5 @@ export default function NavTabs(props) {
         ))}
       </ul>
     </header>
-  )
-};
+  );
+}
