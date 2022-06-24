@@ -5,19 +5,22 @@ import Project from "../Project";
 export default function About() {
   return (
     <div className="layout">
+      <div className="hero"></div>
       <section id="about">
-        <h1 className="section-title"> About Me</h1>
+        <h1 className="section-title"> John Lanni</h1>
         <div id="headshot">
           <img src={headshot} alt="headshot" className="headshot" />
         </div>
         <p>
-          I'm a Full Stack Web Developer with a passion for technology and
-          continued learning. I graduated from the Rutgers University Web
-          Development Bootcamp in September 2021. As a former personal training
-          manager, I’m proficient in working with others and am looking forward
-          to collaborating with other developers to create high quality
+          I'm a Web Developer and problem solver who specializes in HTML, CSS,
+          JavaScript, and React. I have a full-stack background and am also
+          proficient in working with Node, GraphQL, and MongoDB. I graduated
+          from the Rutgers University Web Development Bootcamp in September 2021
+          and have been dedicated to developing my skillset. My goal is to build
           applications that solve problems and deliver an exceptional user
-          experience.
+          experience. As a former personal training manager, I’m proficient in
+          working with others and am looking forward to collaborating with other
+          developers.
         </p>
       </section>
       <section id="projects">
