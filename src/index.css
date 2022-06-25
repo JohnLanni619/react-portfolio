@@ -13,6 +13,7 @@ html {
   --darker: #111111;
   --row-spacing: 1rem;
   --section-spacing: 2rem;
+  --about-height: 1000px;
 }
 
 * {
@@ -130,6 +131,7 @@ nav a:hover {
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
+  min-height: var(--about-height);
   width: 100vw;
   position: relative;
   z-index: 1;
@@ -141,6 +143,7 @@ nav a:hover {
 }
 #about {
   position: absolute;
+  min-height: var(--about-height);
   top: 0;
   bottom: 0;
   left: 0;
@@ -151,7 +154,6 @@ nav a:hover {
   align-items: center;
   row-gap: 1.25rem;
   z-index: 20;
-  margin-top: 6rem;
 }
 
 #about p {
@@ -274,9 +276,9 @@ footer .icon:hover {
   .header {
     position: relative;
   }
-  #about {
+  /* #about {
     margin-top: 9rem;
-  }
+  } */
   #about p {
     max-width: 90%;
   }
@@ -291,32 +293,22 @@ footer .icon:hover {
   }
 }
 
+
 @media screen and (max-width: 576px) {
   .header {
     flex-direction: column;
   }
-  #about {
-    margin-top: 18rem;
+  :root {
+    --about-height: 1150px;
   }
-
-  .hero {
-    height: 115vh;
-  }
-}
-
-@media screen and (max-width: 436px) {
-  #about {
-    margin-top: 24rem;
-  }
-
-  .hero {
-    height: 130vh;
-  }
-}
-
-@media screen and (max-width: 380px) {
   .headshot {
-    width: 200px;
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 396px) {
+  :root {
+    --about-height: 1300px;
   }
 }
 
