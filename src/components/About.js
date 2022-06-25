@@ -6,9 +6,7 @@ export default function About() {
       <div className="hero"></div>
       <section id="about">
         <h1 className="section-title"> About</h1>
-        <div id="headshot">
-          <img src={headshot} alt="headshot" className="headshot" />
-        </div>
+        <img src={headshot} alt="headshot" className="headshot" id="headshot" />
         <p>
           I'm a Web Developer and problem solver who specializes in HTML, CSS,
           JavaScript, and React. I have a full-stack background and am also

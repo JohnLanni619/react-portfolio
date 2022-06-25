@@ -168,6 +168,7 @@ nav a:hover {
   border-radius: 100vh;
   box-shadow: 15px 15px 5px orange;
   width: 350px;
+  object-fit: cover;
 }
 
 /* styling for projects section */
@@ -245,6 +246,7 @@ nav a:hover {
 /* Footer Styling */
 footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   width: 100%;
@@ -252,6 +254,7 @@ footer {
   background: var(--tertiary);
   z-index: 5;
   transition: 1s;
+  row-gap: 1rem;
 }
 
 #footer-icon-container {
@@ -276,9 +279,7 @@ footer .icon:hover {
   .header {
     position: relative;
   }
-  /* #about {
-    margin-top: 9rem;
-  } */
+
   #about p {
     max-width: 90%;
   }
@@ -299,16 +300,37 @@ footer .icon:hover {
     flex-direction: column;
   }
   :root {
-    --about-height: 1150px;
+    --about-height: 1100px;
   }
-  .headshot {
-    max-width: 90%;
+  #headshot, .headshot {
+    width: 75%;
+  }
+  #about {
+    display: block;
+    top: calc(75px + 1rem);
+  }
+
+  #about > *, .headshot {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
   }
 }
 
-@media screen and (max-width: 396px) {
+@media screen and (max-width: 320px) {
+  .logo-container {
+    display: none;
+  }
+
+  .project-name {
+    font-size: 1.25rem;
+  }
   :root {
     --about-height: 1300px;
+  }
+  footer a {
+    font-size: .85rem;
   }
 }
 
