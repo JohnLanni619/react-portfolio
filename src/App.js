@@ -1,11 +1,16 @@
-import Footer from './components/Footer';
-import PortfolioContainer from "./components/PortfolioContainer";
+import Nav from "./components/Nav";
+import About from "./components/About";
+import Footer from "./components/Footer";
+import Project from "./components/Project";
+import {projects} from "./data/projects";
 
 export default function App() {
-    return(
-        <section>
-            <PortfolioContainer/>
-            <Footer/>
-        </section>
-    )
-};
+  return (
+    <section>
+      <Nav />
+      <About />
+      <Project projects={projects} />
+      <Footer />
+    </section>
+  );
+}
