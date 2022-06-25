@@ -1,6 +1,4 @@
-import headshot from "../../assets/headshot.jpg";
-import { projects } from "../../data/projects";
-import Project from "../Project";
+import headshot from "../assets/headshot.jpg";
 
 export default function About() {
   return (
@@ -22,10 +20,6 @@ export default function About() {
           working with others and am looking forward to collaborating with other
           developers.
         </p>
-      </section>
-      <section id="projects">
-        <h1 className="section-title">Projects</h1>
-        <Project projects={projects} />
       </section>
     </div>
   );

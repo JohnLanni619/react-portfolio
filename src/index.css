@@ -1,7 +1,7 @@
 html {
   overflow-y: scroll;
   overflow-x: hidden;
-  scroll-padding-top: 150px;
+  scroll-padding-top: 100px;
 }
 
 :root {
@@ -11,6 +11,7 @@ html {
   --light: #fafafa;
   --darker: #111111;
   --row-spacing: 1rem;
+  --section-spacing: 2rem;
 }
 
 * {
@@ -63,7 +64,7 @@ h1 {
 
 h4 {
   font-size: 1.75rem;
-  font-family: sans-serif;
+  font-family: "Stick No Bills", sans-serif;
 }
 
 p {
@@ -72,19 +73,12 @@ p {
   font-family: sans-serif;
 }
 
-a {
+a, .nav-icon {
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
   color: white;
   font-weight: 600;
-}
-
-.layout {
-  display: flex;
-  flex-direction: column;
-  row-gap: var(--row-spacing);
-  padding-bottom: calc(var(--row-spacing) * 3);
 }
 
 /* Header/Nav Styling */
@@ -94,19 +88,34 @@ a {
   position: sticky;
   z-index: 50;
   height: 75px;
-  background-image: url(./assets/AdobeStock_301046542.jpeg);
+  background-image: url(./assets/hero.jpeg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   color: white;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+
 nav a {
   text-decoration: underline rgba(0, 0, 0, 0);
   transition: text-decoration-color 0.5s;
+}
+
+.nav-icon-container {
+  display: flex;
+}
+
+.nav-icon {
+  font-size: 1.5rem;
 }
 
 nav a:hover {
@@ -115,7 +124,7 @@ nav a:hover {
 }
 
 .hero {
-  background-image: url("./assets/AdobeStock_301046542.jpeg");
+  background-image: url("./assets/hero.jpeg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -126,6 +135,9 @@ nav a:hover {
 }
 
 /* About Me Styling */
+.layout {
+  margin-bottom: var(--section-spacing);
+}
 #about {
   position: absolute;
   top: 0;
@@ -138,6 +150,7 @@ nav a:hover {
   align-items: center;
   row-gap: 1.25rem;
   z-index: 20;
+  margin-top: 6rem;
 }
 
 #about p {
@@ -175,6 +188,7 @@ nav a:hover {
   max-width: 70%;
   margin-inline: auto;
   gap: 1.5rem;
+  margin-bottom: var(--section-spacing);
 }
 
 .flexbox-item {
@@ -197,18 +211,20 @@ nav a:hover {
   flex-basis: 100%;
 }
 
+.project-content {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #logo {
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 .logo-container {
   display: flex;
-  align-items: flex-start;
   column-gap: 0.5rem;
-}
-
-.project-content {
-  z-index: 3;
 }
 
 .overlay {
@@ -225,6 +241,9 @@ nav a:hover {
 
 /* Footer Styling */
 footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
   padding: 1rem 0;
   background: var(--tertiary);
@@ -251,164 +270,41 @@ footer .icon:hover {
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-  body {
-    padding-top: 75px;
-    padding-bottom: 30px;
+  .header {
+    position: relative;
   }
-  header {
-    height: 100px;
+  #about {
+    margin-top: 3rem;
   }
-  #nav-container {
-    padding: 0;
-    margin: 0;
-    font-size: 16px;
-  }
-  .flexbox-container {
-    width: 100%;
+  #about p {
+    max-width: 90%;
   }
 
-  #nav-container {
-    display: flex;
-    flex-wrap: inherit;
-    justify-content: center;
+  .project-container {
+    max-width: 90%;
   }
 
-  .nav-item {
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-    font-size: 14px;
-  }
-
-  .nav-item a {
-    padding: 10px;
-    margin: 0px;
-  }
-
-  header h1 {
-    width: 100%;
-    color: white;
-  }
-
-  h1,
-  p,
-  #headshot {
-    text-align: center;
-  }
-
-  h1 {
-    text-align: center;
-  }
-
-  /* Contact Media Queries */
-  .col-1 {
-    margin-right: 30px;
-  }
-
-  #contact a {
-    font-size: 20px;
-  }
-
-  /* Resume Media Queries */
-  .card-container {
-    width: 100%;
-  }
-  .card {
-    width: 90%;
-    font-size: 16px;
+  .flexbox-item {
+    flex-basis: 100%;
   }
 }
 
 @media screen and (max-width: 576px) {
-  body {
-    padding-top: 75px;
-    padding-bottom: 30px;
-  }
-  header {
-    height: 100px;
-  }
-  #nav-container {
-    padding: 0;
-    margin: 0;
-    font-size: 12px;
-  }
-  .flexbox-container {
-    width: 90%;
+  #about {
+    margin-top: 12rem;
   }
 
-  #nav-container {
-    display: flex;
-    flex-wrap: inherit;
-    justify-content: center;
+  .hero {
+    height: 110vh;
+  }
+}
+
+@media screen and (max-width: 436px) {
+  #about {
+    margin-top: 24rem;
   }
 
-  .nav-item {
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-  }
-
-  .nav-item a {
-    padding: 10px;
-    margin: 0px;
-  }
-
-  header h1 {
-    width: 100%;
-    color: white;
-  }
-
-  h1,
-  p,
-  #headshot {
-    text-align: center;
-  }
-
-  h1 {
-    text-align: center;
-  }
-
-  /* Work Media Queries */
-  .flexbox-item {
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    width: 100%;
-  }
-
-  .flexbox-item h4 {
-    font-size: 14px;
-  }
-
-  .flexbox-item p {
-    display: none;
-  }
-
-  /* Contact Media Queries */
-  #contact a {
-    font-size: 14px;
-  }
-
-  .contact-container {
-    flex-direction: column;
-    margin-top: 0px;
-  }
-
-  .col-1 {
-    margin: 0px 0px 15px 0px;
-  }
-
-  .icon {
-    font-size: 75px;
-  }
-
-  /* Resume Media Queries */
-  .card-container {
-    width: 100%;
-  }
-  .card {
-    font-size: 14px;
-    padding: 0px;
-    padding-top: 10px;
+  .hero {
+    height: 120vh;
   }
 }

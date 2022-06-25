@@ -1,9 +1,6 @@
-import { TiHtml5 } from "react-icons/ti";
-
 export const projects = [
   {
     name: "Hype Machine",
-    technologies: "MERN Stack/GraphQL/Apollo",
     logos: [
       "devicon-react-original-wordmark",
       "devicon-graphql-plain-wordmark",
@@ -18,7 +15,6 @@ export const projects = [
   },
   {
     name: "The Anime Shop",
-    // technologies: "MYSQL/Sequelize/Express/Node/Handlebars/Heroku",
     logos: [
       "devicon-html5-plain-wordmark",
       "devicon-css3-plain-wordmark",
@@ -33,7 +29,6 @@ export const projects = [
   },
   {
     name: "Ambience",
-    // technologies: "HTML/CSS/JavaScript/jQuery",
     logos: [
       "devicon-html5-plain-wordmark",
       "devicon-css3-plain-wordmark",
@@ -61,7 +56,6 @@ export const projects = [
   },
   {
     name: "Budget Tracker",
-    // technologies: "HTML/CSS/JavaScript",
     logos: [
       "devicon-html5-plain-wordmark",
       "devicon-css3-plain-wordmark",
@@ -89,7 +83,6 @@ export const projects = [
   },
   {
     name: "Code Quiz",
-    technologies: "JavaScript",
     logos: [
       "devicon-html5-plain-wordmark",
       "devicon-css3-plain-wordmark",
