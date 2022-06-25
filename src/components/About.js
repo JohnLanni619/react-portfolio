@@ -5,7 +5,7 @@ export default function About() {
     <div className="layout">
       <div className="hero"></div>
       <section id="about">
-        <h1 className="section-title"> John Lanni</h1>
+        <h1 className="section-title"> About</h1>
         <div id="headshot">
           <img src={headshot} alt="headshot" className="headshot" />
         </div>

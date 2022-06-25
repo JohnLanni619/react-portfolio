@@ -193,7 +193,7 @@ nav a:hover {
 }
 
 .flexbox-item {
-  height: 300px;
+  aspect-ratio: 9 / 3;
   flex-grow: 1;
   flex-basis: 45%;
   color: white;
@@ -275,7 +275,7 @@ footer .icon:hover {
     position: relative;
   }
   #about {
-    margin-top: 3rem;
+    margin-top: 9rem;
   }
   #about p {
     max-width: 90%;
@@ -287,16 +287,20 @@ footer .icon:hover {
 
   .flexbox-item {
     flex-basis: 100%;
+    height: auto;
   }
 }
 
 @media screen and (max-width: 576px) {
+  .header {
+    flex-direction: column;
+  }
   #about {
-    margin-top: 12rem;
+    margin-top: 18rem;
   }
 
   .hero {
-    height: 110vh;
+    height: 115vh;
   }
 }
 
@@ -306,7 +310,13 @@ footer .icon:hover {
   }
 
   .hero {
-    height: 120vh;
+    height: 130vh;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .headshot {
+    width: 200px;
   }
 }
 
