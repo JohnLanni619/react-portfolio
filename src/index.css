@@ -2,6 +2,7 @@ html {
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-padding-top: 100px;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -307,4 +308,10 @@ footer .icon:hover {
   .hero {
     height: 120vh;
   }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
 }
