@@ -14,10 +14,24 @@ html {
   --row-spacing: 1rem;
   --section-spacing: 2rem;
   --about-height: 1000px;
+  --nav-height: 75px;
+  --container-width: min(1500px, 90%);
 }
 
 * {
   box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: whitesmoke;
 }
 
 body {
@@ -89,7 +103,7 @@ a, .nav-icon {
   top: 0;
   position: sticky;
   z-index: 50;
-  height: 75px;
+  height: var(--nav-height);
   background-image: url(./assets/hero.jpeg);
   background-size: cover;
   background-attachment: fixed;
@@ -130,44 +144,44 @@ nav a:hover {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh;
-  min-height: var(--about-height);
+  height: calc(100vh - var(--nav-height));
   width: 100vw;
   position: relative;
   z-index: 1;
+  margin-bottom: var(--section-spacing);
+  padding-block: 1rem;
 }
 
 /* About Me Styling */
-.layout {
-  margin-bottom: var(--section-spacing);
-}
+
 #about {
-  position: absolute;
-  min-height: var(--about-height);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   row-gap: 1.25rem;
-  z-index: 20;
+  width: var(--container-width);
+  margin-inline: auto;
+  height: 100%;
+}
+
+#about .description-container {
+  width: min(70ch, 90%);
+  overflow: auto;
 }
 
 #about p {
-  max-width: 70ch;
   background-color: var(--primary);
   border-radius: 5px;
   color: white;
   padding: 0.75rem;
+  margin: 0;
 }
 
 .headshot {
   border-radius: 100vh;
   box-shadow: 15px 15px 5px orange;
-  width: 350px;
+  width: min(350px, 90%);
   object-fit: cover;
 }
 
@@ -189,7 +203,7 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 70%;
+  width: var(--container-width);
   margin-inline: auto;
   gap: 1.5rem;
   margin-bottom: var(--section-spacing);
@@ -280,10 +294,6 @@ footer .icon:hover {
     position: relative;
   }
 
-  #about p {
-    max-width: 90%;
-  }
-
   .project-container {
     max-width: 90%;
   }
@@ -298,23 +308,6 @@ footer .icon:hover {
 @media screen and (max-width: 576px) {
   .header {
     flex-direction: column;
-  }
-  :root {
-    --about-height: 1100px;
-  }
-  #headshot, .headshot {
-    width: 75%;
-  }
-  #about {
-    display: block;
-    top: calc(75px + 1rem);
-  }
-
-  #about > *, .headshot {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1rem;
   }
 }
 

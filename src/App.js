@@ -6,11 +6,11 @@ import {projects} from "./data/projects";
 
 export default function App() {
   return (
-    <section>
+    <main>
       <Nav />
       <About />
       <Project projects={projects} />
       <Footer />
-    </section>
+    </main>
   );
 }
