@@ -9,7 +9,7 @@ export const projects = [
     ],
     links: {
       git: "https://github.com/JohnLanni619/hype-machine",
-      deployed: "https://boiling-beach-80721.herokuapp.com/",
+      deployed: "https://hype-machine.onrender.com/",
     },
     image: require("../assets/hype-machine.jpg"),
   },
@@ -23,7 +23,7 @@ export const projects = [
     ],
     links: {
       git: "https://github.com/JohnLanni619/anime-storefront",
-      deployed: "https://arcane-waters-50733.herokuapp.com/",
+      deployed: "https://anime-storefront.onrender.com/",
     },
     image: require("../assets/anime.jpg"),
   },
@@ -63,7 +63,7 @@ export const projects = [
     ],
     links: {
       git: "https://github.com/JohnLanni619/budget-tracker",
-      deployed: "https://powerful-cove-91999.herokuapp.com/",
+      deployed: "https://budget-tracker-pmcp.onrender.com/",
     },
     image: require("../assets/budget.jpg"),
   },
